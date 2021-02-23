@@ -3,6 +3,8 @@ class Post < ApplicationRecord
   validates :body, presence: true
 
   validate :some
+  #TODO: add comment!
+  #sdsds
 
   def some
     if self.title.length < 3
