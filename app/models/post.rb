@@ -6,7 +6,7 @@ class Post < ApplicationRecord
   #TODO: add comment!
   #sdsds
   def some
-
+    #somesome
     if self.title.length < 3
       errors.add :title, message: 'must be more than 2 letters'
     end
