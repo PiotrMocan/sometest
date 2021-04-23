@@ -7,7 +7,9 @@ application up and running.
 `/hello/:id`
 ```json
   {
-    "hello": "some"
+    "hello": "some",
+    "test": "some_test",
+    "is_test: true
   }
 ```
 
