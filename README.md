@@ -3,7 +3,8 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+чтобы получить информацию о текущем балансе провайдера используйте запрос:
+
 `/hello/:id`
 ```json
   {
