@@ -1,32 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-чтобы получить информацию о текущем балансе провайдера используйте запрос:
-`/hello/:id`
-```json
-  {
-    "hello": "some",
-    "test": "some_test",
-    "is_test: true
-  }
-```
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```{:request=>{:name=>"balance refill", :method=>"POST", :header=>nil, :body=>"{\r\n    \"provider_uuid\": \"cca91486-cfd5-4376-8c11-e9acb99a3957\",\r\n    \"amount\": 1000\r\n}"}}```
