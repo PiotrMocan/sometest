@@ -1,7 +1,3 @@
-# README
-
-
-
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog show
@@ -10,7 +6,7 @@ params
 ```
 header:
 body:
- {
+{
   "device_uuid": "123456"
 }
 
@@ -23,7 +19,7 @@ RESPONSE:
     "id": "d2e90470-81f8-433f-b956-949e09d4c7ba",
     "provider_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
     "licenses": [
-    {
+      {
         "id": "fe44d6d1-0ef8-4dc8-aee0-24dea58c2a8a",
         "title": "service.archive_5.title",
         "identifier": "archive_5",
@@ -35,7 +31,7 @@ RESPONSE:
         "group_name": "service.archive.group_name",
         "device_uuid": "123456"
       }
-    {
+      {
         "id": "ced7924e-471d-48fd-b8be-54af11d2a28e",
         "title": "service.sirin_cloud.title",
         "identifier": "sirin_cloud",
@@ -47,7 +43,7 @@ RESPONSE:
         "group_name": "service.videoserver.group_name",
         "device_uuid": "123456"
       }
-    {
+      {
         "id": "bbc0dc6e-f18b-49fc-ab3a-fb65915febe8",
         "title": "service.service_analytics.title",
         "identifier": "service_analytics",
@@ -59,10 +55,10 @@ RESPONSE:
         "group_name": "service.service_analytics.group_name",
         "device_uuid": "123456"
       }
-      ]
+    ]
 
   }
-  ]
+]
 
 ```
 
@@ -75,7 +71,7 @@ params
 ```
 header:
 body:
- {
+{
   "device_uuid": "123456"
 }
 
@@ -83,11 +79,11 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "id": "d2e90470-81f8-433f-b956-949e09d4c7ba",
   "provider_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
   "licenses": [
-   {
+    {
       "id": "fe44d6d1-0ef8-4dc8-aee0-24dea58c2a8a",
       "title": "service.archive_5.title",
       "identifier": "archive_5",
@@ -99,7 +95,7 @@ RESPONSE:
       "group_name": "service.archive.group_name",
       "device_uuid": "123456"
     }
-   {
+    {
       "id": "ced7924e-471d-48fd-b8be-54af11d2a28e",
       "title": "service.sirin_cloud.title",
       "identifier": "sirin_cloud",
@@ -111,7 +107,7 @@ RESPONSE:
       "group_name": "service.videoserver.group_name",
       "device_uuid": "123456"
     }
-   {
+    {
       "id": "bbc0dc6e-f18b-49fc-ab3a-fb65915febe8",
       "title": "service.service_analytics.title",
       "identifier": "service_analytics",
@@ -123,7 +119,7 @@ RESPONSE:
       "group_name": "service.service_analytics.group_name",
       "device_uuid": "123456"
     }
-    ]
+  ]
 
 }
 
@@ -138,15 +134,15 @@ params
 ```
 header:
 body:
- {
+{
   "device_uuid": "123456",
   "licenses": [
-   {
+    {
       "id": "bbc0dc6e-f18b-49fc-ab3a-fb65915febe8",
       "active": "true",
       "price": "80"
     }
-    ]
+  ]
 
 }
 
@@ -155,7 +151,7 @@ RESPONSE:
 
 ```
 [
-  ]
+]
 
 ```
 
@@ -168,7 +164,7 @@ params
 ```
 header:
 body:
- {
+{
 
 }
 
@@ -176,13 +172,13 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "90",
   "order_items": [
-   {
+    {
       "device_uuid": "12345",
-      "license":     {
+      "license":       {
         "id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6",
         "title": "service.archive_5.title",
         "identifier": "archive_5",
@@ -196,7 +192,7 @@ RESPONSE:
       }
       "price": "90"
     }
-    ]
+  ]
 
 }
 
@@ -211,7 +207,7 @@ params
 ```
 header:
 body:
- {
+{
 
 }
 
@@ -220,7 +216,7 @@ RESPONSE:
 
 ```
 [
-  ]
+]
 
 ```
 
@@ -233,7 +229,7 @@ params
 ```
 header:
 body:
- {
+{
   "license_id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6"
 }
 
@@ -241,13 +237,13 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "90",
   "order_items": [
-   {
+    {
       "device_uuid": "12345",
-      "license":     {
+      "license":       {
         "id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6",
         "title": "service.archive_5.title",
         "identifier": "archive_5",
@@ -261,7 +257,7 @@ RESPONSE:
       }
       "price": "90"
     }
-    ]
+  ]
 
 }
 
@@ -276,7 +272,7 @@ params
 ```
 header:
 body:
- {
+{
   "license_id": "226a7d7b-3998-474b-bf6e-a4cd71dd5b3e"
 }
 
@@ -284,11 +280,11 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "0",
   "order_items": [
-    ]
+  ]
 
 }
 
@@ -303,7 +299,7 @@ params
 ```
 header:
 body:
- {
+{
   "payment_type": "card"
 }
 
@@ -311,7 +307,7 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "uuid": "1a066d97-a5db-419f-8c6b-b006e70cee08",
   "payment_type": "card",
   "operation_type": "purchase",
@@ -338,7 +334,7 @@ params
 ```
 header:
 body:
- {
+{
 
 }
 
@@ -349,12 +345,12 @@ RESPONSE:
 [
   {
     "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
-    "invoice":    {
+    "invoice":     {
       "uuid": "1a066d97-a5db-419f-8c6b-b006e70cee08",
       "payment_type": "card",
       "operation_type": "purchase",
       "state": "succeeded",
-      "recipient":     {
+      "recipient":       {
         "account_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
         "inn": "8622026633",
         "kpp": "862201001",
@@ -366,9 +362,9 @@ RESPONSE:
     }
     "total_price": "90",
     "order_items": [
-    {
+      {
         "device_uuid": "12345",
-        "license":      {
+        "license":         {
           "id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6",
           "title": "service.archive_5.title",
           "identifier": "archive_5",
@@ -382,10 +378,10 @@ RESPONSE:
         }
         "price": "90"
       }
-      ]
+    ]
 
   }
-  ]
+]
 
 ```
 
@@ -398,7 +394,7 @@ params
 ```
 header:
 body:
- {
+{
   "provider_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957"
 }
 
@@ -406,7 +402,7 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "account_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957",
   "amount": "10",
   "overdraft": "100"
@@ -423,7 +419,7 @@ params
 ```
 header:
 body:
- {
+{
   "amount": "10000"
 }
 
@@ -441,7 +437,7 @@ RESPONSE:
     "result": "10",
     "date": "2021-04-26T07:24:36.209Z"
   }
-  ]
+]
 
 ```
 
@@ -454,7 +450,7 @@ params
 ```
 header:
 body:
- {
+{
   "provider_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957",
   "amount": "1000"
 }
@@ -463,14 +459,14 @@ body:
 RESPONSE:
 
 ```
- {
+{
   "id": "53352b90-2889-4faa-a017-a8b4f7095687",
   "invoice":   {
     "uuid": "ae324a95-3945-45a5-9610-45e5125d567c",
     "payment_type": "bank",
     "operation_type": "refill",
     "state": "pending",
-    "recipient":    {
+    "recipient":     {
       "account_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
       "inn": "8622026633",
       "kpp": "862201001",
@@ -483,13 +479,10 @@ RESPONSE:
   }
   "total_price": "1000",
   "order_items": [
-    ]
+  ]
 
 }
 
 ```
-
-
-
 
 
