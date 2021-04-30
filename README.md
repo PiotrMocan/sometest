@@ -1,5 +1,6 @@
 # README
 
+
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ```
 {
@@ -13,7 +14,7 @@
   }
 }
 ```
-*__POST__ api/public/v1/providers/{:provider_uuid}/catalogs/
+* __POST__ api/public/v1/providers/{:provider_uuid}/catalogs/
 ```
 {
   "request": {
@@ -26,7 +27,7 @@
   }
 }
 ```
-*__PATCH__ api/public/v1/providers/{:provider_uuid}/catalogs
+* __PATCH__ api/public/v1/providers/{:provider_uuid}/catalogs
 ```
 {
   "request": {
@@ -40,7 +41,7 @@
   }
 }
 ```
-*__GET__ api/public/v1/providers/{:provider_uuid}/orders/current
+* __GET__ api/public/v1/providers/{:provider_uuid}/orders/current
 ```
 {
   "request": {
@@ -51,7 +52,7 @@
   }
 }
 ```
-*__PATCH__ api/public/v1/providers/{:provider_uuid}/orders/clear_order
+* __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/clear_order
 ```
 {
   "request": {
@@ -62,7 +63,7 @@
   }
 }
 ```
-*__PATCH__ api/public/v1/providers/{:provider_uuid}/orders/add_item
+* __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/add_item
 ```
 {
   "request": {
@@ -75,7 +76,7 @@
   }
 }
 ```
-*__PATCH__ api/public/v1/providers/{:provider_uuid}/orders/remove_item
+* __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/remove_item
 ```
 {
   "request": {
@@ -88,7 +89,7 @@
   }
 }
 ```
-*__POST__ api/public/v1/providers/{:provider_uuid}/orders/checkout
+* __POST__ api/public/v1/providers/{:provider_uuid}/orders/checkout
 ```
 {
   "request": {
@@ -101,7 +102,7 @@
   }
 }
 ```
-*__GET__ api/public/v1/providers/{:provider_uuid}/orders
+* __GET__ api/public/v1/providers/{:provider_uuid}/orders
 ```
 {
   "request": {
@@ -112,7 +113,7 @@
   }
 }
 ```
-*__GET__ api/public/v1/providers/{:provider_uuid}/balances
+* __GET__ api/public/v1/providers/{:provider_uuid}/balances
 ```
 {
   "request": {
@@ -125,7 +126,7 @@
   }
 }
 ```
-*__GET__ api/public/v1/providers/{:provider_uuid}/balances/operations
+* __GET__ api/public/v1/providers/{:provider_uuid}/balances/operations
 ```
 {
   "request": {
@@ -138,7 +139,7 @@
   }
 }
 ```
-*__POST__ api/public/v1/providers/{:provider_uuid}/balances/refill
+* __POST__ api/public/v1/providers/{:provider_uuid}/balances/refill
 ```
 {
   "request": {
