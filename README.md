@@ -132,9 +132,9 @@ body:
   "device_uuid": "123456",
   "licenses": [
     {
-      "id": "bbc0dc6e-f18b-49fc-ab3a-fb65915febe8",
+      "id": "eb4a7366-3f9a-45e1-8eb0-797ceb063329",
       "active": "true",
-      "price": "80"
+      "price": "100"
     }
   ]
 }
@@ -143,8 +143,31 @@ body:
 RESPONSE:
 
 ```
-[
-]
+{
+  "order":   {
+    "id": "641beaac-3e5a-44ef-bcb6-bfae2d391c9f",
+    "invoice":     {
+      "uuid": "a230c285-39f0-4fd8-b4ef-9b37e2930857",
+      "payment_type": "balance",
+      "operation_type": "purchase",
+      "state": "succeeded",
+      "recipient":       {
+        "account_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
+        "inn": "8622026633",
+        "kpp": "862201001",
+        "company_name": "ООО "СИРИН"",
+        "address": "628260, Ханты-Мансийский Автономный Округ - Югра ао, Югорск г, Спортивная ул, дом 3, офис 7"
+      }
+      "pay_off": "",
+      "amount": "80"
+    }
+    "total_price": "80",
+    "order_items": [
+    ]
+  }
+  "document": "http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1358358f86b7360c10d0788ea4691c3a556ebf97/4a5070d7-8652-40f3-a42c-698083bd8214.pdf"
+}
+
 ```
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/orders/current
@@ -214,7 +237,7 @@ params
 header:
 body:
 {
-  "license_id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6"
+  "license_id": "eb4a7366-3f9a-45e1-8eb0-797ceb063329"
 }
 
 ```
@@ -254,7 +277,7 @@ params
 header:
 body:
 {
-  "license_id": "226a7d7b-3998-474b-bf6e-a4cd71dd5b3e"
+  "license_id": "eb4a7366-3f9a-45e1-8eb0-797ceb063329"
 }
 
 ```
@@ -446,6 +469,106 @@ RESPONSE:
   }
   "total_price": "1000",
   "order_items": [
+  ]
+}
+
+```
+
+* __GET__ api/public/v1/providers/{:provider_uuid}/service_acts
+#### service acts index
+params
+
+```
+header:
+body:
+{
+  "month": "2021-04"
+}
+
+```
+RESPONSE:
+
+```
+[
+  {
+    "order":     {
+      "id": "7ddaf9f5-71ae-4f3b-b41c-45ff006f24ef",
+      "invoice":       {
+        "uuid": "b1024958-a3af-46d0-bf3a-279645354b50",
+        "payment_type": "balance",
+        "operation_type": "purchase",
+        "state": "succeeded",
+        "recipient":         {
+          "account_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
+          "inn": "8622026633",
+          "kpp": "862201001",
+          "company_name": "ООО "СИРИН"",
+          "address": "628260, Ханты-Мансийский Автономный Округ - Югра ао, Югорск г, Спортивная ул, дом 3, офис 7"
+        }
+        "pay_off": "",
+        "amount": "80"
+      }
+      "total_price": "80",
+      "order_items": [
+      ]
+    }
+    "document": "http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2702f1eb8a7a51e623a7e4dfbc62372968c41cff/21fece83-4b95-4cfc-966b-fa725b8198f5.pdf"
+  }
+]
+```
+
+* __GET__ api/public/v1/providers/{:provider_uuid}/service_acts/{:service_act_uuid}
+#### service acts show
+params
+
+```
+header:
+body:
+{
+
+}
+
+```
+RESPONSE:
+
+```
+{
+  "id": "e6d8272c-09f0-4ed2-9373-9776e44dc4f0",
+  "order":   {
+    "id": "91ec72ac-64dc-415c-a1ff-c661e038834f",
+    "invoice":     {
+      "uuid": "95568b29-daad-4359-9d4e-175cd36bbaf3",
+      "payment_type": "balance",
+      "operation_type": "purchase",
+      "state": "succeeded",
+      "recipient":       {
+        "account_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
+        "inn": "8622026633",
+        "kpp": "862201001",
+        "company_name": "ООО "СИРИН"",
+        "address": "628260, Ханты-Мансийский Автономный Округ - Югра ао, Югорск г, Спортивная ул, дом 3, офис 7"
+      }
+      "pay_off": "",
+      "amount": "80"
+    }
+    "total_price": "80",
+    "order_items": [
+    ]
+  }
+  "document": "http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d2496e7dbdb90a7bb6692faabbc19bf8102f7c0b/e6d8272c-09f0-4ed2-9373-9776e44dc4f0.pdf",
+  "licenses": [
+    {
+      "id": "0dcbfde5-32a8-4606-bd23-3989c70f4464",
+      "title": "service.archive_5.title",
+      "identifier": "archive_5",
+      "description": "service.archive_5.description",
+      "price": "180",
+      "is_active": "true",
+      "group": "archive",
+      "group_description": "service.archive.group_description",
+      "group_name": "service.archive.group_name",
+      "device_uuid": "123456"
+    }
   ]
 }
 
