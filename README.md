@@ -1,6 +1,6 @@
 # README
 
-*__GET__ api/public/v1/providers/{:provider_uuid}/catalogs
+* __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ```
 {
   "request": {
