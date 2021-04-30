@@ -56,10 +56,8 @@ RESPONSE:
         "device_uuid": "123456"
       }
     ]
-
   }
 ]
-
 ```
 
 
@@ -120,7 +118,6 @@ RESPONSE:
       "device_uuid": "123456"
     }
   ]
-
 }
 
 ```
@@ -143,7 +140,6 @@ body:
       "price": "80"
     }
   ]
-
 }
 
 ```
@@ -152,7 +148,6 @@ RESPONSE:
 ```
 [
 ]
-
 ```
 
 
@@ -193,7 +188,6 @@ RESPONSE:
       "price": "90"
     }
   ]
-
 }
 
 ```
@@ -217,7 +211,6 @@ RESPONSE:
 ```
 [
 ]
-
 ```
 
 
@@ -258,7 +251,6 @@ RESPONSE:
       "price": "90"
     }
   ]
-
 }
 
 ```
@@ -285,7 +277,6 @@ RESPONSE:
   "total_price": "0",
   "order_items": [
   ]
-
 }
 
 ```
@@ -379,10 +370,8 @@ RESPONSE:
         "price": "90"
       }
     ]
-
   }
 ]
-
 ```
 
 
@@ -438,7 +427,6 @@ RESPONSE:
     "date": "2021-04-26T07:24:36.209Z"
   }
 ]
-
 ```
 
 
@@ -480,7 +468,6 @@ RESPONSE:
   "total_price": "1000",
   "order_items": [
   ]
-
 }
 
 ```
