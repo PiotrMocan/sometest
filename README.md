@@ -1,5 +1,8 @@
 # README
 
+
+
+
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog show
 params
@@ -60,6 +63,8 @@ RESPONSE:
   }
 ]
 ```
+
+
 
 
 
@@ -125,6 +130,8 @@ RESPONSE:
 
 
 
+
+
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog update
 params
@@ -150,6 +157,8 @@ RESPONSE:
 [
 ]
 ```
+
+
 
 
 
@@ -195,6 +204,8 @@ RESPONSE:
 
 
 
+
+
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/clear_order
 ### order clear
 params
@@ -213,6 +224,8 @@ RESPONSE:
 [
 ]
 ```
+
+
 
 
 
@@ -258,6 +271,8 @@ RESPONSE:
 
 
 
+
+
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/remove_item
 ### order remove item
 params
@@ -281,6 +296,8 @@ RESPONSE:
 }
 
 ```
+
+
 
 
 
@@ -316,6 +333,8 @@ RESPONSE:
 }
 
 ```
+
+
 
 
 
@@ -377,6 +396,8 @@ RESPONSE:
 
 
 
+
+
 * __GET__ api/public/v1/providers/{:provider_uuid}/balances
 ### balance show
 params
@@ -399,6 +420,8 @@ RESPONSE:
 }
 
 ```
+
+
 
 
 
@@ -429,6 +452,8 @@ RESPONSE:
   }
 ]
 ```
+
+
 
 
 
@@ -472,5 +497,7 @@ RESPONSE:
 }
 
 ```
+
+
 
 
