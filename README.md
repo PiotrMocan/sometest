@@ -1,10 +1,7 @@
 # README
 
-
-
-
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
-### catalog show
+#### catalog show
 params
 
 ```
@@ -64,12 +61,8 @@ RESPONSE:
 ]
 ```
 
-
-
-
-
 * __POST__ api/public/v1/providers/{:provider_uuid}/catalogs/
-### catalog create
+#### catalog create
 params
 
 ```
@@ -128,12 +121,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/catalogs
-### catalog update
+#### catalog update
 params
 
 ```
@@ -158,12 +147,8 @@ RESPONSE:
 ]
 ```
 
-
-
-
-
 * __GET__ api/public/v1/providers/{:provider_uuid}/orders/current
-### order show
+#### order show
 params
 
 ```
@@ -202,12 +187,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/clear_order
-### order clear
+#### order clear
 params
 
 ```
@@ -225,12 +206,8 @@ RESPONSE:
 ]
 ```
 
-
-
-
-
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/add_item
-### order add_item
+#### order add_item
 params
 
 ```
@@ -269,12 +246,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/remove_item
-### order remove item
+#### order remove item
 params
 
 ```
@@ -297,12 +270,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __POST__ api/public/v1/providers/{:provider_uuid}/orders/checkout
-### order checkout
+#### order checkout
 params
 
 ```
@@ -334,12 +303,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __GET__ api/public/v1/providers/{:provider_uuid}/orders
-### order index
+#### order index
 params
 
 ```
@@ -394,12 +359,8 @@ RESPONSE:
 ]
 ```
 
-
-
-
-
 * __GET__ api/public/v1/providers/{:provider_uuid}/balances
-### balance show
+#### balance show
 params
 
 ```
@@ -421,12 +382,8 @@ RESPONSE:
 
 ```
 
-
-
-
-
 * __GET__ api/public/v1/providers/{:provider_uuid}/balances/operations
-### balance operations
+#### balance operations
 params
 
 ```
@@ -453,12 +410,8 @@ RESPONSE:
 ]
 ```
 
-
-
-
-
 * __POST__ api/public/v1/providers/{:provider_uuid}/balances/refill
-### balance refill
+#### balance refill
 params
 
 ```
@@ -497,7 +450,3 @@ RESPONSE:
 }
 
 ```
-
-
-
-
