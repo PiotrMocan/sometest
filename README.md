@@ -1,4 +1,4 @@
-###README
+# README
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog show
