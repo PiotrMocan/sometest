@@ -2,17 +2,23 @@
 
 
 
+
 * __GET__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog show
 params
+
 ```
 header:
 body:
  {
   "device_uuid": "123456"
 }
-```RESPONSE:
-```[
+
+```
+RESPONSE:
+
+```
+[
   {
     "id": "d2e90470-81f8-433f-b956-949e09d4c7ba",
     "provider_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
@@ -57,20 +63,27 @@ body:
 
   }
   ]
+
 ```
+
 
 
 * __POST__ api/public/v1/providers/{:provider_uuid}/catalogs/
 ### catalog create
 params
+
 ```
 header:
 body:
  {
   "device_uuid": "123456"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "id": "d2e90470-81f8-433f-b956-949e09d4c7ba",
   "provider_uuid": "852c6ff4-3cbd-4eb1-93c6-9299f9d6d399",
   "licenses": [
@@ -113,12 +126,15 @@ body:
     ]
 
 }
+
 ```
+
 
 
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/catalogs
 ### catalog update
 params
+
 ```
 header:
 body:
@@ -133,23 +149,34 @@ body:
     ]
 
 }
-```RESPONSE:
-```[
-  ]
+
 ```
+RESPONSE:
+
+```
+[
+  ]
+
+```
+
 
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/orders/current
 ### order show
 params
+
 ```
 header:
 body:
  {
 
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "90",
   "order_items": [
@@ -172,35 +199,49 @@ body:
     ]
 
 }
+
 ```
+
 
 
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/clear_order
 ### order clear
 params
+
 ```
 header:
 body:
  {
 
 }
-```RESPONSE:
-```[
-  ]
+
 ```
+RESPONSE:
+
+```
+[
+  ]
+
+```
+
 
 
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/add_item
 ### order add_item
 params
+
 ```
 header:
 body:
  {
   "license_id": "6f6cafe1-bc12-44da-b93a-02b7857c22e6"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "90",
   "order_items": [
@@ -223,40 +264,54 @@ body:
     ]
 
 }
+
 ```
+
 
 
 * __PATCH__ api/public/v1/providers/{:provider_uuid}/orders/remove_item
 ### order remove item
 params
+
 ```
 header:
 body:
  {
   "license_id": "226a7d7b-3998-474b-bf6e-a4cd71dd5b3e"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
   "total_price": "0",
   "order_items": [
     ]
 
 }
+
 ```
+
 
 
 * __POST__ api/public/v1/providers/{:provider_uuid}/orders/checkout
 ### order checkout
 params
+
 ```
 header:
 body:
  {
   "payment_type": "card"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "uuid": "1a066d97-a5db-419f-8c6b-b006e70cee08",
   "payment_type": "card",
   "operation_type": "purchase",
@@ -271,20 +326,27 @@ body:
   "pay_off": "https://yoomoney.ru/payments/external/confirmation?orderId=2819d707-000f-5000-8000-1243bc10a804",
   "amount": "90"
 }
+
 ```
+
 
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/orders
 ### order index
 params
+
 ```
 header:
 body:
  {
 
 }
-```RESPONSE:
-```[
+
+```
+RESPONSE:
+
+```
+[
   {
     "id": "53d2c64c-10cc-4e4c-b163-17471a4e8020",
     "invoice":    {
@@ -324,38 +386,52 @@ body:
 
   }
   ]
+
 ```
+
 
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/balances
 ### balance show
 params
+
 ```
 header:
 body:
  {
   "provider_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "account_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957",
   "amount": "10",
   "overdraft": "100"
 }
+
 ```
+
 
 
 * __GET__ api/public/v1/providers/{:provider_uuid}/balances/operations
 ### balance operations
 params
+
 ```
 header:
 body:
  {
   "amount": "10000"
 }
-```RESPONSE:
-```[
+
+```
+RESPONSE:
+
+```
+[
   {
     "target": "amount",
     "action": "charge",
@@ -366,12 +442,15 @@ body:
     "date": "2021-04-26T07:24:36.209Z"
   }
   ]
+
 ```
+
 
 
 * __POST__ api/public/v1/providers/{:provider_uuid}/balances/refill
 ### balance refill
 params
+
 ```
 header:
 body:
@@ -379,8 +458,12 @@ body:
   "provider_uuid": "cca91486-cfd5-4376-8c11-e9acb99a3957",
   "amount": "1000"
 }
-```RESPONSE:
-``` {
+
+```
+RESPONSE:
+
+```
+ {
   "id": "53352b90-2889-4faa-a017-a8b4f7095687",
   "invoice":   {
     "uuid": "ae324a95-3945-45a5-9610-45e5125d567c",
@@ -403,6 +486,10 @@ body:
     ]
 
 }
+
 ```
+
+
+
 
 
